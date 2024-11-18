@@ -1,12 +1,12 @@
 name: Run Login Script
 
-on:
-  workflow_dispatch:
-  schedule:
-    - cron: "0 0 1 * *"  # 每月1号运行一次
-  push:
-    branches:
-      - main
+# on:
+#   workflow_dispatch:
+#   schedule:
+#     - cron: "0 0 1 * *"  # 每月1号运行一次
+#   push:
+#     branches:
+#       - main
 
 jobs:
   login:
