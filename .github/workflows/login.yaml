@@ -4,13 +4,10 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "0 0 */5 * *"  # 每5天运行一次
-  push:
-    branches:
-      - main
 
 jobs:
   login:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout 仓库代码
